@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Package, TrendingUp, TrendingDown, TriangleAlert, ScanLine, ChevronRight } from 'lucide-react'
+import { Package, TrendingUp, TrendingDown, AlertTriangle, ScanLine, ChevronRight } from 'lucide-react'
 import { api } from '../hooks/useApi'
 
 export default function Dashboard() {
@@ -100,7 +100,7 @@ export default function Dashboard() {
           <div className="card" style={{ marginBottom: 20 }}>
             <div style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                <TriangleAlert size={16} color="var(--warning)" />
+                <AlertTriangle size={16} color="var(--warning)" />
                 <span style={{ fontWeight: 600, fontSize: 14 }}>Stock bas</span>
                 <span className="badge badge-warning">{stats.low_stock_count}</span>
               </div>

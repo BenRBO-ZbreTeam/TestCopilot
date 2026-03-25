@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
-import { Search, Package, TriangleAlert, ChevronRight, Filter, X } from 'lucide-react'
+import { Search, Package, AlertTriangle, ChevronRight, Filter, X } from 'lucide-react'
 import { api } from '../hooks/useApi'
 
 export default function Stock() {
@@ -89,7 +89,7 @@ export default function Stock() {
               className={`btn ${showLowOnly ? 'btn-primary' : 'btn-secondary'}`}
               style={{ gap: 6, flexShrink: 0 }}
             >
-              <TriangleAlert size={14} />
+              <AlertTriangle size={14} />
               Stock bas
             </button>
           </div>

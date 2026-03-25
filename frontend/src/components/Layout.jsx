@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import { LayoutDashboard, ScanLine, Package, History, Settings, TriangleAlert } from 'lucide-react'
+import { LayoutDashboard, ScanLine, Package, History, Settings, AlertTriangle } from 'lucide-react'
 
 const navItems = [
   { path: '/', label: 'Dashboard', icon: LayoutDashboard },
